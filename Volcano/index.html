@@ -1,22 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My cool DATA 1500 project</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stratovolcano Risk in the 21st Century</title>
+  <meta
+    name="description"
+    content="A narrative visualization about the global distribution, danger, and concentration of stratovolcano eruptions."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <article>
+    <div class="container">
+      <header class="header">
+        <h1 class="headline">Stratovolcano Risk in the 21st Century</h1>
+        <p class="dek">
+          A global analysis of volcano distribution, volcano types, and country-level concentration of significant eruptions, 2000–2025
+        </p>
+        <div class="attribution">
+          <p>By Yichen Li</p>
+          <p>Final Project, 2026</p>
+        </div>
+      </header>
+      <hr />
+      <figure class="hero-graphic">
+        <img src="images/plot3.png" alt="Global map of volcano distribution with stratovolcanoes highlighted." />
+      </figure>
 
-    <body>
-        <h1>Volcano!!!</h1>
-        <p id="name">Yichen Li</p>
-        <div class ="divider"></div>
-        <p>I'm hosted with GitHub Pages.</p>
-        <img src = "images/rhode_island.png" alt = "100% stacked area chart of the population share of the five counties of Rhode Island, showing that Providence's share declined starting around WWII.">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit placeat atque voluptatibus blanditiis voluptatum quaerat, consequuntur perspiciatis eaque error eum cumque nisi corporis similique optio laboriosam fugiat ab explicabo!</p>
-        <h2>About this story</h2>
-        <p>Here's a <a href="https://www.brown.edu/">link</a>.</p>
-        <img id="image2" src = "images/image2.jpg" alt="Image 2">
-    </body>
+      <div class="copy-width">
+
+        <p class="prose">
+            Significant eruptions are not spread evenly across the world. They cluster most heavily along tectonic boundaries, with especially strong concentration around the Pacific Ring of Fire. This pattern shows that volcanic risk is structured geographically rather than randomly distributed. At the global level, the Pacific stands out as the central zone of significant volcanic activity, making it the clearest starting point for understanding where dangerous eruptions are most likely to occur.
+            This project focuses specifically on significant eruptions. In this dataset, a significant eruption is defined as one that caused deaths, caused notable damage, reached a Volcanic Explosivity Index (VEI) of 6 or higher, triggered a tsunami, or was associated with a major earthquake.
+        </p>
+
+        <p class="prose">
+          This project narrows from a broad global view to a more specific argument. Volcanoes are split into five volcano types:
+          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano,
+          <img class="inline-icon" src="images/complex.png" alt="Complex volcano icon"> complex volcano,
+          <img class="inline-icon" src="images/caldera.png" alt="Caldera icon"> caldera,
+          <img class="inline-icon" src="images/shield.png" alt="Shield volcano icon"> shield volcano,
+          and
+          <img class="inline-icon" src="images/other.png" alt="Other volcano icon"> other.
+          I begin with the worldwide distribution of volcanoes, then focus on
+          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+          as the most consequential type in the dataset, due to their combination of frequent eruptions and high human impact, and finally look at the countries where significant
+          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+          eruptions are most concentrated. Taken together, these three views move from global context to type-level importance and then to country-level concentration.
+        </p>
+      </div>
+
+      <hr />
+
+      <figure class="graphic-container">
+        <div class="graphic-frame">
+          <img src="images/plot2.png" alt="Bar chart comparing volcano types by eruption count and average deaths per eruption." />
+        </div>
+      </figure>
+
+      <div class="copy-width">
+        <p class="prose">
+        Among the five volcano types in this dataset,
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        stand out most clearly. They account for the largest number of significant eruptions and also show the highest average deaths per eruption. This combination of frequency and lethality makes them more consequential than the other volcano types considered here. In this dataset,
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        are not only common, but also especially destructive in human terms.
+        </p>
+      </div>
+
+      <hr />
+
+      <figure class="graphic-container">
+        <div class="graphic-frame">
+          <img src="images/plot1.png" alt="Line chart showing cumulative significant stratovolcano eruptions for the top five countries." />
+        </div>
+
+      </figure>
+
+      <div class="copy-width">
+        <p class="prose">
+        The risks associated with
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        are also unevenly distributed across countries. Between 2000 and 2025, Indonesia recorded the highest cumulative number of significant
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+        eruptions among the five countries shown here. This suggests that the burden of dangerous
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+        activity is concentrated in particular national contexts rather than shared equally across all volcanic regions. Indonesia stands out most clearly as the country where this concentration is strongest.
+        </p>
+      </div>
+
+      <hr />
+
+    <div class="copy-width methods">
+        <h3>Conclusion</h3>
+        <p>
+        Significant volcanic risk is not evenly distributed across space, volcano types, or countries. Instead, it becomes more concentrated at each level of the analysis: first around the Pacific, then in
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes,
+        and finally in Indonesia. This pattern suggests that the danger associated with volcanic eruptions is not just a matter of where volcanoes exist, but of which volcanoes erupt, how destructive they are, and where that destruction is most concentrated. Taken together, these results show why
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        deserve particular attention in any discussion of significant eruption risk in the 21st century.
+        </p>
+    </div>
+
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>
+        This website was designed as part of a final project at Brown University. I am deeply grateful to Professor Reuben Fischer-Baum for his guidance, support, and feedback throughout the semester.
+      </p>
+
+      <p>
+        This project examines the global distribution of volcanoes, the danger of stratovolcanoes, and the countries where significant stratovolcano eruptions are most concentrated.
+      </p>
+
+      <p>
+        Data source: National Geophysical Data Center / World Data Service (NGDC/WDS): NCEI/WDS Global Significant Volcanic Eruptions Database, NOAA National Centers for Environmental Information, doi:10.7289/V5JW8BSH.
+      </p>
+      <p class="footer-credit">
+        © 2026 Yichen Li. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
 </html>
