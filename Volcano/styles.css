@@ -43,7 +43,7 @@ padding-bottom: 0;
 .headline {
 margin: 0;
 font-family: "Anton SC", sans-serif;
-font-size: clamp(2.6rem, 5vw, 5.2rem);
+font-size: clamp(2.6rem, 5vw, 4.5rem);
 line-height: 1.05;
 font-weight: 400;
 text-align: center;
