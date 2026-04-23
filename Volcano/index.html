@@ -11,34 +11,33 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="splash-screen" id="splash-screen">
-        <div class="splash-image"></div>
-            <div class="splash-overlay"></div>
+  <div class="top-banner">
 
-            <div class="splash-content">
-            <h1 class="splash-title">Stratovolcano Risk in the 21st Century</h1>
-            <p class="splash-subtitle">Scroll or click to enter</p>
-        </div>
+    <img src="images/merapi.png" 
+        alt="Erupting Mount Merapi in Indonesia">
+
+    <div class="top-caption">
+      Erupting Mt Merapi, Indonesia.
     </div>
-  <article>
-    <div class="container">
-      <header class="header">
+
+  </div>
+  <header class="header">
         <h1 class="headline">Stratovolcano Risk in the 21st Century</h1>
         <p class="dek">
           A global analysis of volcano distribution, volcano types, and country-level concentration of significant eruptions, 2000–2025
         </p>
         <div class="attribution">
           <p>By Yichen Li</p>
-          <p>Final Project, 2026</p>
+          <p>Data 1500 Final Project, 2026</p>
         </div>
       </header>
+  <article>
+    <div class="container">
+      
       <hr />
       <figure class="hero-graphic">
         <img src="images/plot3.png" alt="Global map of volcano distribution with stratovolcanoes highlighted." />
@@ -56,16 +55,19 @@
 
         <p class="prose">
           The analysis moves from a broad global view to a more specific argument by grouping volcanoes into five types:
-          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano,
-          <img class="inline-icon" src="images/complex.png" alt="Complex volcano icon"> complex volcano,
-          <img class="inline-icon" src="images/caldera.png" alt="Caldera icon"> caldera,
-          <img class="inline-icon" src="images/shield.png" alt="Shield volcano icon"> shield volcano,
+          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcano</b>,
+          <img class="inline-icon" src="images/complex.png" alt="Complex volcano icon"> <b>complex volcano</b>,
+          <img class="inline-icon" src="images/caldera.png" alt="Caldera icon"> <b>caldera</b>,
+          <img class="inline-icon" src="images/shield.png" alt="Shield volcano icon"> <b>shield volcano</b>,
           and
-          <img class="inline-icon" src="images/other.png" alt="Other volcano icon"> other.
+          <img class="inline-icon" src="images/other.png" alt="Other volcano icon"> <b>other</b>.
           The project begins with the worldwide distribution of significant eruptions, then focuses on
-          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+          <span class="icon-word">
+          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b></span>
           as the most consequential type in the dataset because they combine frequent eruptions with strong human impact. Finally, it examines the countries where significant
-          <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+          <span class="icon-word">
+            <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
+          </span>
           eruptions are most concentrated. Together, these three views move from global patterns to volcano type importance and then to country-level concentration.
         </p>
       </div>
@@ -81,9 +83,9 @@
       <div class="copy-width">
         <p class="prose">
         Among the five volcano types in this dataset,
-        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
         stand out most clearly. They account for the largest number of significant eruptions and also have the highest average deaths per eruption. This combination of frequent activity and high lethality makes them more consequential than the other volcano types considered here. In this dataset,
-        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
         are not the most common type but also the most destructive in terms of human impact.
         </p>
       </div>
@@ -100,11 +102,11 @@
       <div class="copy-width">
         <p class="prose">
         The risks associated with
-        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcanoes
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
         are also unevenly distributed across countries. Between 2000 and 2025, Indonesia recorded the highest cumulative number of significant
-        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
         eruptions among these five countries. This suggests that the threat of
-        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> stratovolcano
+        <img class="inline-icon" src="images/strato.png" alt="Stratovolcano icon"> <b>stratovolcanoes</b>
         activity is concentrated in specific national contexts rather than shared equally across all volcanic regions. The plot also highlight the two deadliest eruptions of the 21st century: Mayon in the Philippines (1266 deaths), followed by Merapi in Indonesia (367 deaths).
         </p>
       </div>
@@ -139,7 +141,7 @@
       </p>
 
       <p>
-        Image source: <a href="https://education.nationalgeographic.org/resource/volcanoes/" target="_blank" rel="noopener noreferrer">National Geographic Education, “Volcanoes”</a>.
+        Image source: <a href="https://resonate.travel/photo-essay-the-magic-of-javas-mount-merapi-and-everyday-volcanism-in-yogyakarta/" target="_blank" rel="noopener noreferrer">Resonate Travel, “Travellers' Tales”</a>.
       </p>
 
       <p class="footer-credit">
