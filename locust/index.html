@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive LOCUST 3D Gaussian reconstruction starter project.">
+  <title>LOCUST / Starter Project</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="masking.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span class="brand-mark">L</span><span>LOCUST <em>/ starter project</em></span></a>
+    <nav aria-label="Page sections"><a href="#explore">Explore</a><a href="#report">Report</a><a href="#pipeline">Pipeline</a></nav>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">3D Gaussian reconstruction · native resolution</p>
+      <h1>One locust.<br><span>Many viewpoints.</span></h1>
+      <p class="lede">An interactive reconstruction study focused on preserving thin structures while keeping the scene clean and inspectable.</p>
+      <div class="facts" aria-label="Experiment facts"><span><b>44</b> registered views</span><span><b>50K</b> iterations</span><span><b>2M</b> Gaussian cap</span></div>
+    </section>
+
+    <section id="explore" class="explore-grid">
+      <div class="viewer-card">
+        <div class="card-head"><div><p class="eyebrow">Explore in 3D</p><h2>LOCUST reconstruction</h2></div><span class="live-dot">LIVE</span></div>
+        <div class="viewer-frame"><iframe id="splat" title="Interactive LOCUST SuperSplat viewer" allow="fullscreen"></iframe><div id="viewerFallback" class="viewer-fallback">Connecting to local SuperSplat…</div></div>
+        <div class="viewer-foot"><span>Drag to orbit · scroll to zoom</span><a id="standalone" target="_blank" rel="noreferrer">Open viewer ↗</a></div>
+      </div>
+      <aside class="side-panel">
+        <div class="panel-block"><p class="eyebrow">Selected output</p><p class="model-name">LOCUST_METASHAPE_<br>ORIGINAL45_FULLRES</p><p class="muted">2M · 50K · GROW30K · MASK BPLUS · NOCTRL</p></div>
+        <div class="metric-row"><span>PSNR</span><strong>23.062487</strong></div><div class="metric-row"><span>SSIM</span><strong>0.887327</strong></div>
+        <div class="panel-note">This page loads one centered local PLY directly, so the first render does not wait for a remote transfer or scan unrelated experiments.</div>
+      </aside>
+    </section>
+
+    <section class="masking"><div class="masking-head"><div><p class="eyebrow">Masking evidence</p><h2>Keep the insect.<br><span>Lose the support.</span></h2></div><p>Foreground masking was checked visually before reconstruction so thin legs and antennae stayed in the scene while the background and support were reduced.</p></div><div class="image-strip"><figure><img src="assets/doc_1.png" alt="Input and novel-view locust images"><figcaption><b>Input views</b><span>Registered photographs and a representative render</span></figcaption></figure><figure><img src="assets/doc_2.png" alt="Foreground mask preview with the locust isolated"><figcaption><b>Foreground mask</b><span>Green background makes the retained subject easy to inspect</span></figcaption></figure><figure><img src="assets/doc_3.png" alt="Novel-view reconstruction render of the locust"><figcaption><b>Novel view</b><span>Thin structures remain visible in the reconstruction</span></figcaption></figure></div></section>
+
+    <section id="report" class="report-grid">
+      <div><p class="eyebrow">Project report</p><h2>From photographs<br>to novel views.</h2><p class="body-copy">This individual project developed and evaluated a multi-view 3D Gaussian Splatting workflow for reconstructing a real locust. The central practical challenge was retaining legs and antennae while reducing background artifacts and evaluating novel-view quality.</p><p class="muted">The original report is kept in the project folder for reference and is not exposed through this website.</p></div>
+      <div class="report-sheet"><div class="sheet-bar"><span>LOCUST 3D Gaussian Reconstruction</span><span>REPORT</span></div><div id="reportContent"></div></div>
+    </section>
+
+    <section id="pipeline" class="pipeline"><div><p class="eyebrow">Starter project</p><h2>Reproduce the path.</h2></div><div class="steps"><div><span>01</span><h3>Prepare</h3><p>Register the multi-view images and verify the COLMAP inputs and fixed holdout split.</p></div><div><span>02</span><h3>Mask</h3><p>Generate foreground masks with SAM2Matting, then inspect alignment and thin-structure retention.</p></div><div><span>03</span><h3>Train + inspect</h3><p>Run the native-resolution MRNF + PPISP workflow, export the PLY, and open it in SuperSplat.</p></div></div><a class="text-link" href="code-map.html">Read the complete code map ↗</a></section>
+  </main>
+  <footer><span>LOCUST / starter project</span><span>Local research interface · 2026</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>

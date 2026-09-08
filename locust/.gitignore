@@ -1,0 +1,5 @@
+# The original PLY is kept in the local starter project only.
+*.ply
+local-assets/
+docs/
+.converter/
