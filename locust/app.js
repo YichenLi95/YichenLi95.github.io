@@ -2,7 +2,7 @@ const target = 'LOCUST_METASHAPE_ORIGINAL45_FULLRES_2M_50K_GROW30K_MASK_BPLUS_NO
 const iteration = '50000';
 const viewer = document.querySelector('#splat');
 const localSog = '../assets/locust_original45_50k.sog';
-const viewerUrl = `viewer/index.html?content=${encodeURIComponent(localSog)}&settings=${encodeURIComponent('viewer/settings.json')}&lang=en`;
+const viewerUrl = `viewer/index.html?content=${encodeURIComponent(localSog)}&settings=${encodeURIComponent('settings.json')}&lang=en`;
 viewer.src = viewerUrl;
 document.querySelector('#standalone').href = viewerUrl;
 viewer.addEventListener('load', () => document.querySelector('#viewerFallback').style.display = 'none');
